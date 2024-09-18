@@ -1,0 +1,871 @@
+<header class="header">
+  <div class="container">
+
+    <div class="header__container">
+      <div class="header__sign">
+
+        <div class="dropdown">
+          <button class="dropbtn">українська
+            <img src="./img/lang-change.svg" alt="Change">
+          </button>
+          <div class="dropdown-content">
+            <a href="#">en</a>
+            <a href="#">pl</a>
+            <a href="#">esp</a>
+          </div>
+        </div>
+
+        <div class="header__sign-item">
+          <div class="header__sign-item_up">
+            <div class="header__sign-item_up-icon">
+              <img src="./img/sign-icon.svg" alt="Sign Up">
+            </div>
+            <a href="#!" title="Увійти" class="header__sign-item_up-piece active">увійти</a>
+          </div>
+          <span>/</span>
+          <div class="header__sign-item_registr">
+            <a title="Реєстрація" href="#!" class="header__sign-item_up-piece">реєстрація</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="header__wrap">
+    <div class="container">
+      <div class="header__wrap-flex">
+        <div class="header__wrap-left">
+          <div class="header__wrap-logo">
+            <a href="/">
+              <img src="./img/logotype.png" alt="Novatek">
+            </a>
+          </div>
+
+          <div class="header__wrap-search">
+            <div class="search-box">
+              <form>
+                <input class="search-input" type="text" placeholder="Що ви шукайте?">
+                <button class="search-btn">
+                  <img src="./img/search-icon.svg" alt="Search">
+                </button>
+
+              </form>
+
+            </div>
+          </div>
+
+          <!-- mobile search -->
+          <div class="header-search-wrapper">
+            <span class="search-main">
+              <img src="./img/mobile-search.svg" alt="Search">
+            </span>
+            <div class="search-form-main clearfix">
+              <form role="search" class="search-form">
+                <label>
+                  <input class="search-field" placeholder="Що ви шукаєте?">
+                </label>
+                <input type="submit" class="search-submit" value="Пошук">
+              </form>
+            </div>
+          </div>
+          <!-- mobile search -->
+
+        </div>
+
+
+
+        <div class="header__wrap-right">
+          <div id="openButtonContact" class="header__wrap-right_contact-btn">
+            <a href="#!">
+              <img src="./img/phone-icon.svg" alt="Call">
+            </a>
+          </div>
+          <div class="header__wrap-right_contact">
+            <a href="tel:+38067565-37-68">+38 (067) 565-37-68
+            </a>
+            <a href="tel:+38050359-39-11">+38 (050) 359-39-11
+            </a>
+          </div>
+
+          <!-- header cart -->
+          <!-- <div class="header__wrap-right_cart" id="cart-hover">
+            <div class="header__wrap-right_cart-icon">
+              <img src="./img/cart-icon.svg" alt="Cart">
+            </div>
+            <p>Кошик</p>
+            <span class="count" id="count">0</span>
+
+          </div>
+          <div class="overlay" id="overlay-hover">
+            <div class="cart-content">
+              <p>jfj1</p>
+              <p>fldskf</p>
+              <p>fksjdlkfj</p>
+            </div>
+          </div> -->
+          <div class="cart-container" id="cart-hover">
+            <div class="header__wrap-right_cart">
+              <div class="header__wrap-right_cart-icon">
+                <img src="./img/cart-icon.svg" alt="Cart">
+              </div>
+              <p>Кошик</p>
+              <span class="count" id="count">0</span>
+            </div>
+
+            <div class="cart-content" id="cart-content">
+
+              <!-- items -->
+              <div class="items-cart__container">
+
+                <div class="cart-content__items">
+                  <div class="cart-content__items-left">
+                    <div class="cart-content__items-left_img">
+                      <img src="./img/cartHover-img.png" alt="Item 1">
+                    </div>
+
+                    <div class="cart-content__items-left__block">
+                      <div class="block-name">
+                        <h3>Реле напруги РН-25t</h3>
+                      </div>
+
+                      <div class="block-count">
+                        <button class="cart-hover__btn cart-hover__minus">
+                          <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.0184 7.47168L2.73535 7.47168" stroke="#C8C8C8" stroke-width="1.54717"
+                              stroke-linecap="round" />
+                          </svg>
+                        </button>
+
+                        <span class="cart-hover__count" id="cartHoverCount">1</span>
+
+                        <button class="cart-hover__btn cart-hover__plus">
+                          <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.64227 3.95874L8.63067 12.9839M4.11035 8.47132H13.1355" stroke="#89ACF2"
+                              stroke-width="1.54717" stroke-linecap="round" stroke-linejoin="round" />
+                          </svg>
+                        </button>
+
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <div class="cart-content__items-right">
+                    <div class="cart-content__items-right__sum">
+                      <span class="header-sum" id="cartHoverPrice" data-price="920">920 грн.</span>
+                      <span class="header-tax" id="cartHoverTax">
+                        НДС: 153 грн.
+                      </span>
+                    </div>
+
+                    <div class="cart-content__items-right__delete">
+                      <span id="cartHoverTrash">
+                        <img src="./img/trash-icon.svg" alt="Delete">
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="cart-content__items">
+                  <div class="cart-content__items-left">
+                    <div class="cart-content__items-left_img">
+                      <img src="./img/cartHover-img.png" alt="Item 1">
+                    </div>
+
+                    <div class="cart-content__items-left__block">
+                      <div class="block-name">
+                        <h3>Реле напруги РН-25t</h3>
+                      </div>
+
+
+                      <div class="block-count">
+                        <button class="cart-hover__btn cart-hover__minus">
+                          <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.0184 7.47168L2.73535 7.47168" stroke="#C8C8C8" stroke-width="1.54717"
+                              stroke-linecap="round" />
+                          </svg>
+                        </button>
+
+                        <span class="cart-hover__count" id="cartHoverCount">1</span>
+
+                        <button class="cart-hover__btn cart-hover__plus">
+                          <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.64227 3.95874L8.63067 12.9839M4.11035 8.47132H13.1355" stroke="#89ACF2"
+                              stroke-width="1.54717" stroke-linecap="round" stroke-linejoin="round" />
+                          </svg>
+                        </button>
+
+                      </div>
+
+
+                    </div>
+                  </div>
+
+                  <div class="cart-content__items-right">
+                    <div class="cart-content__items-right__sum">
+                      <span class="header-sum" id="cartHoverPrice" data-price="920">920 грн.</span>
+                      <span class="header-tax" id="cartHoverTax">
+                        НДС: 153 грн.
+                      </span>
+                    </div>
+
+                    <div class="cart-content__items-right__delete">
+                      <span id="cartHoverTrash">
+                        <img src="./img/trash-icon.svg" alt="Delete">
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="cart-content__items">
+                  <div class="cart-content__items-left">
+                    <div class="cart-content__items-left_img">
+                      <img src="./img/cartHover-img.png" alt="Item 1">
+                    </div>
+
+                    <div class="cart-content__items-left__block">
+                      <div class="block-name">
+                        <h3>Реле напруги РН-25t</h3>
+                      </div>
+
+                      <div class="block-count">
+                        <button class="cart-hover__btn cart-hover__minus">
+                          <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.0184 7.47168L2.73535 7.47168" stroke="#C8C8C8" stroke-width="1.54717"
+                              stroke-linecap="round" />
+                          </svg>
+                        </button>
+
+                        <span class="cart-hover__count" id="cartHoverCount">1</span>
+
+                        <button class="cart-hover__btn cart-hover__plus">
+                          <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.64227 3.95874L8.63067 12.9839M4.11035 8.47132H13.1355" stroke="#89ACF2"
+                              stroke-width="1.54717" stroke-linecap="round" stroke-linejoin="round" />
+                          </svg>
+                        </button>
+
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <div class="cart-content__items-right">
+                    <div class="cart-content__items-right__sum">
+                      <span class="header-sum" id="cartHoverPrice" data-price="920">920 грн.</span>
+                      <span class="header-tax" id="cartHoverTax">
+                        НДС: 153 грн.
+                      </span>
+                    </div>
+
+                    <div class="cart-content__items-right__delete">
+                      <span id="cartHoverTrash">
+                        <img src="./img/trash-icon.svg" alt="Delete">
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="cart-content__items">
+                  <div class="cart-content__items-left">
+                    <div class="cart-content__items-left_img">
+                      <img src="./img/cartHover-img.png" alt="Item 1">
+                    </div>
+
+                    <div class="cart-content__items-left__block">
+                      <div class="block-name">
+                        <h3>Реле напруги РН-25t</h3>
+                      </div>
+
+                      <div class="block-count">
+                        <button class="cart-hover__btn cart-hover__minus">
+                          <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.0184 7.47168L2.73535 7.47168" stroke="#C8C8C8" stroke-width="1.54717"
+                              stroke-linecap="round" />
+                          </svg>
+                        </button>
+
+                        <span class="cart-hover__count" id="cartHoverCount">1</span>
+
+                        <button class="cart-hover__btn cart-hover__plus">
+                          <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.64227 3.95874L8.63067 12.9839M4.11035 8.47132H13.1355" stroke="#89ACF2"
+                              stroke-width="1.54717" stroke-linecap="round" stroke-linejoin="round" />
+                          </svg>
+                        </button>
+
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <div class="cart-content__items-right">
+                    <div class="cart-content__items-right__sum">
+                      <span class="header-sum" id="cartHoverPrice" data-price="920">920 грн.</span>
+                      <span class="header-tax" id="cartHoverTax">
+                        НДС: 153 грн.
+                      </span>
+                    </div>
+
+                    <div class="cart-content__items-right__delete">
+                      <span id="cartHoverTrash">
+                        <img src="./img/trash-icon.svg" alt="Delete">
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="cart-content__items">
+                  <div class="cart-content__items-left">
+                    <div class="cart-content__items-left_img">
+                      <img src="./img/cartHover-img.png" alt="Item 1">
+                    </div>
+
+                    <div class="cart-content__items-left__block">
+                      <div class="block-name">
+                        <h3>Реле напруги РН-25t</h3>
+                      </div>
+
+                      <div class="block-count">
+                        <button class="cart-hover__btn cart-hover__minus">
+                          <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.0184 7.47168L2.73535 7.47168" stroke="#C8C8C8" stroke-width="1.54717"
+                              stroke-linecap="round" />
+                          </svg>
+                        </button>
+
+                        <span class="cart-hover__count" id="cartHoverCount">1</span>
+
+                        <button class="cart-hover__btn cart-hover__plus">
+                          <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.64227 3.95874L8.63067 12.9839M4.11035 8.47132H13.1355" stroke="#89ACF2"
+                              stroke-width="1.54717" stroke-linecap="round" stroke-linejoin="round" />
+                          </svg>
+                        </button>
+
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <div class="cart-content__items-right">
+                    <div class="cart-content__items-right__sum">
+                      <span class="header-sum" id="cartHoverPrice" data-price="920">920 грн.</span>
+                      <span class="header-tax" id="cartHoverTax">
+                        НДС: 153 грн.
+                      </span>
+                    </div>
+
+                    <div class="cart-content__items-right__delete">
+                      <span id="cartHoverTrash">
+                        <img src="./img/trash-icon.svg" alt="Delete">
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="cart-content__items">
+                  <div class="cart-content__items-left">
+                    <div class="cart-content__items-left_img">
+                      <img src="./img/cartHover-img.png" alt="Item 1">
+                    </div>
+
+                    <div class="cart-content__items-left__block">
+                      <div class="block-name">
+                        <h3>Реле напруги РН-25t</h3>
+                      </div>
+
+                      <div class="block-count">
+                        <button class="cart-hover__btn cart-hover__minus">
+                          <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.0184 7.47168L2.73535 7.47168" stroke="#C8C8C8" stroke-width="1.54717"
+                              stroke-linecap="round" />
+                          </svg>
+                        </button>
+
+                        <span class="cart-hover__count" id="cartHoverCount">1</span>
+
+                        <button class="cart-hover__btn cart-hover__plus">
+                          <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.64227 3.95874L8.63067 12.9839M4.11035 8.47132H13.1355" stroke="#89ACF2"
+                              stroke-width="1.54717" stroke-linecap="round" stroke-linejoin="round" />
+                          </svg>
+                        </button>
+
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <div class="cart-content__items-right">
+                    <div class="cart-content__items-right__sum">
+                      <span class="header-sum" id="cartHoverPrice" data-price="920">920 грн.</span>
+                      <span class="header-tax" id="cartHoverTax">
+                        НДС: 153 грн.
+                      </span>
+                    </div>
+
+                    <div class="cart-content__items-right__delete">
+                      <span id="cartHoverTrash">
+                        <img src="./img/trash-icon.svg" alt="Delete">
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="cart-content__items">
+                  <div class="cart-content__items-left">
+                    <div class="cart-content__items-left_img">
+                      <img src="./img/cartHover-img.png" alt="Item 1">
+                    </div>
+
+                    <div class="cart-content__items-left__block">
+                      <div class="block-name">
+                        <h3>Реле напруги РН-25t</h3>
+                      </div>
+
+                      <div class="block-count">
+                        <button class="cart-hover__btn cart-hover__minus">
+                          <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.0184 7.47168L2.73535 7.47168" stroke="#C8C8C8" stroke-width="1.54717"
+                              stroke-linecap="round" />
+                          </svg>
+                        </button>
+
+                        <span class="cart-hover__count" id="cartHoverCount">1</span>
+
+                        <button class="cart-hover__btn cart-hover__plus">
+                          <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.64227 3.95874L8.63067 12.9839M4.11035 8.47132H13.1355" stroke="#89ACF2"
+                              stroke-width="1.54717" stroke-linecap="round" stroke-linejoin="round" />
+                          </svg>
+                        </button>
+
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <div class="cart-content__items-right">
+                    <div class="cart-content__items-right__sum">
+                      <span class="header-sum" id="cartHoverPrice" data-price="920">920 грн.</span>
+                      <span class="header-tax" id="cartHoverTax">
+                        НДС: 153 грн.
+                      </span>
+                    </div>
+
+                    <div class="cart-content__items-right__delete">
+                      <span id="cartHoverTrash">
+                        <img src="./img/trash-icon.svg" alt="Delete">
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="cart-content__items">
+                  <div class="cart-content__items-left">
+                    <div class="cart-content__items-left_img">
+                      <img src="./img/cartHover-img.png" alt="Item 1">
+                    </div>
+
+                    <div class="cart-content__items-left__block">
+                      <div class="block-name">
+                        <h3>Реле напруги РН-25t</h3>
+                      </div>
+
+                      <div class="block-count">
+                        <button class="cart-hover__btn cart-hover__minus">
+                          <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.0184 7.47168L2.73535 7.47168" stroke="#C8C8C8" stroke-width="1.54717"
+                              stroke-linecap="round" />
+                          </svg>
+                        </button>
+
+                        <span class="cart-hover__count" id="cartHoverCount">1</span>
+
+                        <button class="cart-hover__btn cart-hover__plus">
+                          <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.64227 3.95874L8.63067 12.9839M4.11035 8.47132H13.1355" stroke="#89ACF2"
+                              stroke-width="1.54717" stroke-linecap="round" stroke-linejoin="round" />
+                          </svg>
+                        </button>
+
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <div class="cart-content__items-right">
+                    <div class="cart-content__items-right__sum">
+                      <span class="header-sum" id="cartHoverPrice" data-price="920">920 грн.</span>
+                      <span class="header-tax" id="cartHoverTax">
+                        НДС: 153 грн.
+                      </span>
+                    </div>
+
+                    <div class="cart-content__items-right__delete">
+                      <span id="cartHoverTrash">
+                        <img src="./img/trash-icon.svg" alt="Delete">
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- items -->
+
+              <!-- footer cart -->
+              <div class="cart-content__footer">
+                <div class="cart-content__footer-sum">
+                  <h4>Загальна сума</h4>
+                  <span id="cartHoverTotalSum"></span>
+                </div>
+                <div class="cart-content__footer-btn">
+                  <a href="pageCart.html">
+                    <span>Оформити замовлення</span>
+                  </a>
+                </div>
+              </div>
+              <!-- footer cart -->
+
+            </div>
+          </div>
+
+          <div class="overlay-hover" id="overlay-hover"></div>
+
+
+          <!-- header cart -->
+
+        </div>
+      </div>
+
+      <div class="header__nav">
+
+        <!-- burger -->
+        <div class="header__burger">
+          <div class="header__burger-line">
+            <span></span>
+          </div>
+          <span class="header__burger-title">Меню</span>
+        </div>
+        <!-- burger -->
+
+
+
+
+        <nav class="header__nav-items">
+          <ul class="header__list">
+            <li class="header__list-item">
+              <div class="header__list-item_dropdown">
+                <a title="Каталог продукції" target="_blank" href="pageCatalog.html"
+                  class="header__list-item_link accent">
+                  Каталог продукції
+                  <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 0.999999L6 6L11 1" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </a>
+                <div class="dropdown-content">
+                  <a href="#">Item 1</a>
+                  <a href="#">Item 2</a>
+                  <a href="#">Item 3</a>
+                  <a href="#">Item 4</a>
+                  <a href="#">Item 5</a>
+                  <a href="#">Item 6</a>
+                </div>
+              </div>
+            </li>
+
+            <li class="header__list-item">
+              <div class="header__list-item_dropdown">
+                <a href="#!" class="header__list-item_link">
+                  Про компанію
+                  <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 0.999999L6 6L11 1" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </a>
+                <div class="dropdown-content">
+                  <a href="#">Item 1</a>
+                  <a href="#">Item 2</a>
+                  <a href="#">Item 3</a>
+                  <a href="#">Item 4</a>
+                  <a href="#">Item 5</a>
+                  <a href="#">Item 6</a>
+                </div>
+              </div>
+            </li>
+
+            <li class="header__list-item">
+              <div class="header__list-item_dropdown">
+                <a href="#!" class="header__list-item_link">
+                  Матеріали
+                  <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 0.999999L6 6L11 1" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </a>
+                <div class="dropdown-content">
+                  <a href="#">Item 1</a>
+                  <a href="#">Item 2</a>
+                  <a href="#">Item 3</a>
+                  <a href="#">Item 4</a>
+                  <a href="#">Item 5</a>
+                  <a href="#">Item 6</a>
+                </div>
+              </div>
+            </li>
+
+            <li class="header__list-item">
+              <div class="header__list-item_dropdown">
+                <a href="#!" class="header__list-item_link">
+                  Послуги
+                  <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 0.999999L6 6L11 1" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </a>
+                <div class="dropdown-content">
+                  <a href="#">Item 1</a>
+                  <a href="#">Item 2</a>
+                  <a href="#">Item 3</a>
+                  <a href="#">Item 4</a>
+                  <a href="#">Item 5</a>
+                  <a href="#">Item 6</a>
+                </div>
+              </div>
+            </li>
+
+            <li class="header__list-item">
+              <a href="#!" class="header__list-item_link">
+                Гарантія
+              </a>
+            </li>
+
+            <li class="header__list-item">
+              <a href="#!" class="header__list-item_link">
+                Доставка і оплата
+              </a>
+            </li>
+
+            <li class="header__list-item">
+              <a href="#!" class="header__list-item_link">
+                Дилери
+              </a>
+            </li>
+
+            <li class="header__list-item">
+              <a href="#!" class="header__list-item_link">
+                Новини
+              </a>
+            </li>
+
+            <li class="header__list-item">
+              <a href="#!" class="header__list-item_link">
+                Блог
+              </a>
+            </li>
+
+            <li class="header__list-item">
+              <a href="#!" class="header__list-item_link">
+                Контакти
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header__nav-social">
+          <a title="Facebook" href="#!" target="_blank">
+            <img src="./img/facebook-ico.svg" alt="Facebook">
+          </a>
+
+          <a title="Instagram" href="#!" target="_blank">
+            <img src="./img/insta-ico.svg" alt="Instagram">
+          </a>
+
+          <a title="Viber" href="#!" target="_blank">
+            <img src="./img/viber-ico.svg" alt="Viber">
+          </a>
+
+          <a title="YouTube" href="#!" target="_blank">
+            <img src="./img/youtube-ico.svg" alt="YouTube">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- mobile contact -->
+  <div class="header__mobile-contact" id="mobileContact">
+    <div class="header__mobile-contact-content_content">
+      <div class="header__mobile-contact-content_close">
+        <button id="closeButtonContact">
+          <img src="./img/close-burger.svg" alt="Close">
+        </button>
+      </div>
+
+      <div class="header__mobile-contact-content_phone">
+        <a href="tel:+38067565-37-68">+38 (067) 565-37-68
+        </a>
+        <a href="tel:+38050359-39-11">+38 (050) 359-39-11
+        </a>
+      </div>
+
+      <div class="header__mobile-contact-content_social">
+        <a title="Facebook" href="#!" target="_blank">
+          <img src="./img/facebook-ico.svg" alt="Facebook">
+        </a>
+
+        <a title="Instagram" href="#!" target="_blank">
+          <img src="./img/insta-ico.svg" alt="Instagram">
+        </a>
+
+        <a title="Viber" href="#!" target="_blank">
+          <img src="./img/viber-ico.svg" alt="Viber">
+        </a>
+
+        <a title="YouTube" href="#!" target="_blank">
+          <img src="./img/youtube-ico.svg" alt="YouTube">
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- mobile contact -->
+
+  <!-- header mobile -->
+  <div class="header__mobile-wrapper">
+
+    <div class="header__mobile-wrapper_nav">
+
+      <div class="header__mobile-wrapper_nav-close">
+        <button id="closeButton">
+          <img src="./img/close-burger.svg" alt="Close">
+        </button>
+      </div>
+
+      <div class="header__mobile-wrapper_nav_logo">
+        <a href="/">
+          <img src="./img/logo-mobile.png" alt="Novatek">
+        </a>
+      </div>
+
+
+      <nav class="header__mobile-wrapper_nav-navigation">
+        <ul>
+          <li class="mobile-accent">
+            <a class="mobile-accent__link" target="_blank" href="#!">Каталог продукції</a>
+          </li>
+
+          <li>
+            <div class="custom-dropdown-container">
+              <div class="custom-dropdown">
+                <button class="custom-dropbtn">
+                  <span>
+                    Про компанію
+                  </span>
+
+                  <img src="./img/nav-arrow.svg" alt="Choose" class="dropdown-arrow">
+                </button>
+                <div class="custom-dropdown-content">
+                  <a href="#!">Про нас</a>
+                  <a href="#!">Реквізити</a>
+                  <a href="#!">Відгуки</a>
+                  <a href="#!">Клієнти</a>
+                  <a href="#!">Сертифікати</a>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="custom-dropdown-container">
+              <div class="custom-dropdown">
+                <button class="custom-dropbtn">
+                  <span>
+                    Матеріали
+                  </span>
+                  <img src="./img/nav-arrow.svg" alt="Choose" class="dropdown-arrow">
+                </button>
+                <div class="custom-dropdown-content">
+                  <a href="#!">Про нас</a>
+                  <a href="#!">Реквізити</a>
+                  <a href="#!">Відгуки</a>
+                  <a href="#!">Клієнти</a>
+                  <a href="#!">Сертифікати</a>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="custom-dropdown-container">
+              <div class="custom-dropdown">
+                <button class="custom-dropbtn">
+                  <span>
+                    Послуги
+                  </span>
+                  <img src="./img/nav-arrow.svg" alt="Choose" class="dropdown-arrow">
+                </button>
+                <div class="custom-dropdown-content">
+                  <a href="#!">Про нас</a>
+                  <a href="#!">Реквізити</a>
+                  <a href="#!">Відгуки</a>
+                  <a href="#!">Клієнти</a>
+                  <a href="#!">Сертифікати</a>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <a target="_blank" href="#!">Гарантія</a>
+          </li>
+          <li>
+            <a target="_blank" href="#!">Доставка і оплата</a>
+          </li>
+          <li>
+            <a target="_blank" href="#!">Дилери</a>
+          </li>
+          <li>
+            <a target="_blank" href="#!">Новини</a>
+          </li>
+          <li>
+            <a target="_blank" href="#!">Блог</a>
+          </li>
+          <li>
+            <a target="_blank" href="#!">Контакти</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header__sign-item_mobile">
+        <div class="header__sign-item_up">
+          <div class="header__sign-item_up-icon">
+            <img src="./img/sign-icon.svg" alt="Sign Up">
+          </div>
+          <a href="#!" title="Увійти" class="header__sign-item_up-piece active">увійти</a>
+        </div>
+        <span>/</span>
+        <div class="header__sign-item_registr">
+          <a title="Реєстрація" href="#!" class="header__sign-item_up-piece">реєстрація</a>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+  <!-- header mobile -->
+
+</header>

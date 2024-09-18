@@ -1,0 +1,136 @@
+<!-- ---------Page Catalog Filtres--------- -->
+
+<section class="catalog__filters">
+    <div class="container">
+
+        <div class="catalog__filters-mobile">
+            <div class="catalog__filters-mobile_sorting">
+                <button id="openButtonCategory">
+                    <img src="./img/sorting-icon.svg" alt="Sorting">
+                    <span>Сортування</span>
+                </button>
+            </div>
+            <div class="catalog__filters-mobile_filters">
+                <button id="openButtonFilters">
+                    <img src="./img/filters-icon.svg" alt="Filters">
+                    <span>Фільтри</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- mobile sorting -->
+        <div class="mobile-sorting" id="mobileCategory">
+            <div class="mobile-sorting__wrapper" id="mobileCategoryOverlay">
+                <div class="mobile-sorting__wrapper-title">
+                    <h3>Сортування</h3>
+                    <button id="closeButtonCategory">
+                        <img src="./img/close-burger.svg" alt="Close">
+                    </button>
+                </div>
+
+                <div class="mobile-sorting__wrapper-content">
+                    <a href="#!">Від дешевих до дорогих</a>
+                    <a href="#!">Від дорогих до дешевих</a>
+                    <a href="#!">Спочатку акційні</a>
+                    <a href="#!">Новинки</a>
+                </div>
+            </div>
+        </div>
+        <!-- mobile sorting -->
+
+
+        <div class="wrapper-overlay" id="mobileOverlaySorting"></div>
+        <div class="wrapper-overlay" id="mobileOverlay"></div>
+
+        <div class="catalog__wrapper" id="mobileFilters">
+            <div class="catalog__wrapper-mobile_title">
+                <h3>Фільтри</h3>
+                <button id="closeButtonFilters">
+                    <img src="./img/close-burger.svg" alt="Close">
+                </button>
+            </div>
+            <div class="catalog__filters-gab">
+                <p>Габарити, модулі DIN:</p>
+
+                <div class="catalog__filters-gab_item">
+                    <ul>
+                        <li class="catalog__filters-gab_item-piece">
+                            1
+                        </li>
+
+                        <li class="catalog__filters-gab_item-piece ">
+                            2
+                        </li>
+
+                        <li class="catalog__filters-gab_item-piece ">
+                            3
+                        </li>
+
+                        <li class="catalog__filters-gab_item-piece ">
+                            4
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="sorting-mobile catalog__filters-sorting">
+                <p>Сортування:</p>
+
+                <div class="custom-select">
+                    <select>
+                        <option value="0">По популярності</option>
+                        <option value="1">Від дешевих до дорогих</option>
+                        <option value="2">Від дорогих до дешевих</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="catalog__filters-sorting">
+                <p>Призначення:</p>
+
+                <div class="goal-select custom-select">
+                    <select>
+                        <option value="0">Усі пристрої</option>
+                        <option value="1">Побутові</option>
+                        <option value="2">Промислові</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="catalog__filters-sorting">
+                <p>Струм:</p>
+
+                <div class="electric-select custom-select">
+                    <select>
+                        <option value="0">25 А</option>
+                        <option value="1">25 А</option>
+                        <option value="2">40 А</option>
+                        <option value="3">60 А</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="catalog__filters-sorting">
+                <p>Потужність:</p>
+
+                <div class="power-select custom-select">
+                    <select>
+                        <option value="0">5 кВт</option>
+                        <option value="1">5 кВт</option>
+                        <option value="2">10 кВт</option>
+                        <option value="3">15 кВт</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="catalog__wrapper-btn">
+                <a href="#!" id="close-mobile-btn">
+                    Застосувати
+                </a>
+            </div>
+        </div>
+
+
+
+    </div>
+</section>

@@ -1,0 +1,59 @@
+// базовые подключения
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "settings";
+
+// подключения компонентов страницы
+@import "./components/header";
+@import "./components/header-1";
+@import "./components/footer";
+
+//Main Page
+@import "./components/pageMain/pageMainItem";
+
+//Catalog Page
+@import "./components/pageCatalog/pageCatalogHead";
+@import "./components/pageCatalog/pageCatalogFilters";
+@import "./components/pageCatalog/pageCatalogProduct";
+@import "./components/pageCatalog/pageCatalogFoot";
+
+//Product Page
+@import "./components/pageProduct/pageProductItem";
+
+//Cart Page
+@import "./components/pageCart/pageCart";
+
+//Cart Form
+@import "./components/pageCart/pageCartForm";
+@import "./components/pageCart/pageCartFormDone";
+
+//News Page
+@import "./components/pageNews/pageNewsItem";
+@import "./components/pageNews/pageNewsArticleItem";
+
+//Blog Page
+@import "./components/pageBlog/pageBlogItem";
+@import "./components/pageBlog/pageBlogMainItem";
+
+//Contact Page
+@import "./components/pageContact/pageContactItem";
+@import "./components/pageContact/pageContactItemTeam";
+
+//Download Page
+@import "./components/pageDownload/pageDownloadItem";
+
+//Warranty Page
+@import "./components/pageWarranty/pageWarrantyItem";
+
+//Delivery Page
+@import "./components/pageDelivery/pageDeliveryItem";
+
+//Soft Page
+@import "./components/pageSoft/pageSoftItem";
+
+//Services Page
+@import "./components/pageServices/pageServicesItem";
+
+//About Page
+@import "./components/pageAbout/pageAboutItem";

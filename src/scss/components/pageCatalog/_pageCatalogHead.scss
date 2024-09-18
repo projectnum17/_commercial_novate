@@ -1,0 +1,13 @@
+//________________ Page Catalog Head________________
+
+.catalog__head {
+  padding-top: 20px;
+
+  @media screen and (max-width: 1660px) {
+    padding-top: 10px;
+  }
+
+  @media screen and (max-width: 768px) {
+    padding-top: 16px;
+  }
+}

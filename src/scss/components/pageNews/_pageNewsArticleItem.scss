@@ -1,0 +1,253 @@
+//________________________ Page News Article Start _________________
+
+.news__article {
+  background: #fff;
+  padding-bottom: 100px;
+
+  @media screen and (max-width: 1660px) {
+    padding-bottom: 60px;
+  }
+
+  @media screen and (max-width: 768px) {
+    padding-bottom: 80px;
+  }
+
+  &-bread {
+    padding-top: 20px;
+    margin-bottom: 80px;
+
+    @media screen and (max-width: 1660px) {
+      padding-top: 10px;
+      margin-bottom: 40px;
+    }
+
+    @media screen and (max-width: 768px) {
+      padding-top: 16px;
+      margin-bottom: 16px;
+      //max-width: 358px;
+    }
+
+    p {
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 21px;
+      letter-spacing: 0em;
+
+      color: #a0a0a0;
+    }
+  }
+}
+
+.news__article-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media screen and (max-width: 768px) {
+    display: block;
+  }
+}
+
+.news__article-content__title {
+  margin-bottom: 50px;
+
+  @media screen and (max-width: 1660px) {
+    margin-bottom: 30px;
+  }
+
+  @media screen and (max-width: 768px) {
+    margin-bottom: 16px;
+  }
+
+  h1 {
+    color: #000;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 57px;
+    letter-spacing: 0em;
+    max-width: 850px;
+    text-align: center;
+
+    @media screen and (max-width: 1660px) {
+      font-size: 32px;
+      line-height: 38px;
+    }
+
+    @media screen and (max-width: 768px) {
+      font-size: 22px;
+      line-height: 33px;
+      text-align: left;
+      margin-bottom: 16px;
+    }
+  }
+}
+
+.news__article-content__thumb {
+  width: 100%;
+  max-width: 850px;
+  max-height: 478px;
+  margin-bottom: 50px;
+
+  @media screen and (max-width: 1660px) {
+    margin-bottom: 40px;
+  }
+
+  @media screen and (max-width: 768px) {
+    margin-bottom: 32px;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+}
+
+.news__article-content__subtitle {
+  h3 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0em;
+    color: #000;
+    margin-bottom: 30px;
+
+    @media screen and (max-width: 1660px) {
+      margin-bottom: 15px;
+    }
+
+    @media screen and (max-width: 768px) {
+      font-size: 20px;
+      line-height: 30px;
+      text-align: center;
+      margin-bottom: 32px;
+    }
+  }
+}
+
+.news__article-content__description {
+  max-width: 860px;
+  margin-bottom: 50px;
+
+  @media screen and (max-width: 768px) {
+    margin-bottom: 32px;
+  }
+
+  p {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 40px;
+    letter-spacing: 0em;
+    color: #6b6b6b;
+
+    @media screen and (max-width: 1660px) {
+      font-size: 16px;
+      line-height: 32px;
+    }
+
+    @media screen and (max-width: 768px) {
+      font-size: 20px;
+      line-height: 36px;
+      text-align: left;
+      margin-bottom: 32px;
+    }
+
+    a {
+      font-weight: 500;
+      position: relative;
+      color: #89acf2;
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        bottom: 0;
+        left: 0;
+        background: #89acf2;
+      }
+    }
+  }
+}
+
+.news__article-content__link {
+  margin-bottom: 50px;
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 32px;
+  }
+
+  a {
+    background: #feb92f;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: $color-blue;
+    padding: 18px 82px;
+    display: inline-block;
+
+    @media screen and (max-width: 768px) {
+      width: 100%;
+      padding: 19px 0px;
+    }
+  }
+}
+
+.news__article-content__contact {
+  text-align: center;
+  margin-bottom: 15px;
+  p {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 40px;
+    letter-spacing: 0em;
+    color: #6b6b6b;
+
+    @media screen and (max-width: 768px) {
+      max-width: 358px;
+      margin: 0 auto;
+    }
+  }
+}
+
+.news__article-content__contact-link {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  a {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 40px;
+    letter-spacing: 0em;
+
+    position: relative;
+    color: #89acf2;
+
+    @media screen and (max-width: 768px) {
+      margin: 0 auto;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      bottom: 0;
+      left: 0;
+      background: #89acf2;
+    }
+  }
+}
+
+.news-footer {
+  @media screen and (max-width: 976px) {
+    padding-top: 0 !important;
+  }
+}
+//________________________ Page News Article End _________________

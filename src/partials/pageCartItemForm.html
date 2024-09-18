@@ -1,0 +1,367 @@
+<section class="form" style="display: none;">
+
+    <form action="#!">
+
+        <div class="form__content">
+            <!-- form -->
+            <div class="form__content-input">
+                <h2>Оформити замовлення</h2>
+
+                <div class="form__content-input__wrapper">
+                    <div class="form__content-input__wrapper-title">
+                        <p>1. Контактні дані</p>
+                    </div>
+
+                    <div class="form__content-input__wrapper-cab">
+                        <span>Є особистий кабінет?</span>
+                        <a href="#!">Увійти</a>
+                    </div>
+                </div>
+
+                <div class="form__content-input__btn">
+                    <button class="physical-person active-btn">Фізична особа</button>
+                    <button class="legal-person">Юридична особа</button>
+                </div>
+
+                <div class="form__content-input__container-phys">
+                    <div>
+                        <label for="nameInput">
+                            Ім'я
+                            <span style="color: red;">*</span>
+                        </label>
+                        <input type="text" id="nameInput" name="name" required>
+                    </div>
+
+                    <div>
+                        <label for="lastNameInput">
+                            Прізвище
+                            <span style="color: red;">*</span></label>
+                        <input type="text" id="lastNameInput" name="lastName" required>
+                    </div>
+
+                    <div>
+                        <label for="phoneInput">
+                            Телефон
+                            <span style="color: red;">*</span></label>
+                        <input type="tel" id="phoneInput" name="phone" required>
+                    </div>
+
+                    <div>
+                        <label for="emailInput">
+                            Email
+                            <span style="color: red;">*</span></label>
+                        <input type="email" id="emailInput" name="email" required>
+                    </div>
+                </div>
+
+                <div class="form__content-input__container-leg" style="display: none;">
+
+                    <div>
+                        <label for="companyInput">
+                            Назва компанії
+                            <span style="color: red;">*</span>
+                        </label>
+                        <input type="text" id="nameInput" name="name" required>
+                    </div>
+
+                    <div>
+                        <label for="IPNInput">
+                            ІПН
+                            <span style="color: red;">*</span>
+                        </label>
+                        <input type="text" id="nameInput" name="name" required>
+                    </div>
+
+                    <div>
+                        <label for="nameInput">
+                            Ім'я
+                            <span style="color: red;">*</span>
+                        </label>
+                        <input type="text" id="nameInput" name="name" required>
+                    </div>
+
+                    <div>
+                        <label for="lastNameInput">
+                            Прізвище
+                            <span style="color: red;">*</span></label>
+                        <input type="text" id="lastNameInput" name="lastName" required>
+                    </div>
+
+                    <div>
+                        <label for="phoneInput">
+                            Телефон
+                            <span style="color: red;">*</span></label>
+                        <input type="tel" id="phoneInput" name="phone" required>
+                    </div>
+
+                    <div>
+                        <label for="emailInput">
+                            Email
+                            <span style="color: red;">*</span></label>
+                        <input type="email" id="emailInput" name="email" required>
+                    </div>
+                </div>
+
+                <div class="form__content-input-checkbox">
+                    <label class="custom-checkbox">
+                        <input type="checkbox" checked>
+                        <span class="checkbox-icon"></span>
+                    </label>
+
+                    <p>Створити обліковий запис автоматично</p>
+                </div>
+
+
+
+            </div>
+            <!-- form -->
+
+            <!-- delivery -->
+            <div class="form__content-delivery">
+                <h3>2. Доставка</h3>
+
+                <div class="form__content-delivery__wrapper">
+                    <div class="form__content-delivery__wrapper-flex">
+                        <label class="select-label" for="citySelect">Ваше місто <span
+                                style="color: red;">*</span></label>
+
+                        <div class="custom-select__form">
+
+                            <select>
+                                <option value="0">Обери своє місто</option>
+                                <option value="1">Київ</option>
+                                <option value="2">Одеса</option>
+                                <option value="3">Харків</option>
+                                <option value="4">Львів</option>
+                                <option value="5">Дніпро</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="custom-select__check">
+                        <label class="radio-label">
+                            <input type="radio" class="hidden-radio" name="selectedCity" value="City 1">
+                            Київ
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" class="hidden-radio" name="selectedCity" value="City 2">
+                            Харків
+                        </label>
+
+                        <label class="radio-label">
+                            <input type="radio" class="hidden-radio" name="selectedCity" value="City 3">
+                            Одеса
+                        </label>
+
+                        <label class="radio-label">
+                            <input type="radio" class="hidden-radio" name="selectedCity" value="City 4">
+                            Львів
+                        </label>
+
+                        <label class="radio-label">
+                            <input type="radio" class="hidden-radio" name="selectedCity" value="City 5">
+                            Дніпро
+                        </label>
+                    </div>
+                </div>
+
+
+                <div class="form__content-delivery-content">
+                    <h3>Спосіб доставки</h3>
+
+                    <div class="delivery-option">
+
+                        <label class="delivery-label">
+
+                            <input type="radio" name="delivery" class="visible-radio">
+
+                            <div class="delivery-option__info">
+
+                                <div class="delivery-option__info-img">
+                                    <div class="delivery-option__info-img__block">
+                                        <img src="./img/delivery-icon.jpg" alt="Ukrposhta">
+                                    </div>
+                                    <span>Кур'єром</span>
+                                </div>
+
+                                <div class="delivery-details">
+                                    <p>Информация о Доставщике 3...</p>
+                                </div>
+
+                            </div>
+
+                            <div class="delivery-option__prise">
+                                <span>65грн</span>
+                            </div>
+
+                        </label>
+
+                    </div>
+
+                    <div class="delivery-option">
+
+                        <label class="delivery-label">
+
+                            <input type="radio" name="delivery" class="visible-radio">
+
+                            <div class="delivery-option__info">
+                                <div class="delivery-option__info-img">
+                                    <div class="delivery-option__info-img__block">
+                                        <img src="./img/urkposhta-icon.jpg" alt="Ukrposhta">
+                                    </div>
+                                    <span>Укрпошта</span>
+                                </div>
+                                <div class="delivery-details">
+                                    <p>Информация о Доставщике 2...</p>
+                                </div>
+                            </div>
+
+                            <div class="delivery-option__prise free-price">
+                                <span>Безкоштовно</span>
+                            </div>
+
+                        </label>
+
+                    </div>
+
+                    <div class="delivery-option">
+
+                        <label class="delivery-label">
+
+                            <input type="radio" name="delivery" class="visible-radio">
+
+                            <div class="delivery-option__info">
+                                <div class="delivery-option__info-img">
+                                    <div class="delivery-option__info-img__block">
+                                        <img src="./img/nivaposhta-icon.jpg" alt="Novaposhta">
+                                    </div>
+                                    <span>Нова пошта</span>
+                                </div>
+                                <div class="delivery-details">
+                                    <h6>відділення/поштомат*</h6>
+
+                                    <div class="dropdown-el">
+                                        <input type="hidden" name="customdropdown" class="dp-input" value="" />
+                                        <div class="dropdown-head">
+                                            <div class="current-selected"></div>
+                                        </div>
+                                        <div class="dropdown-body">
+                                            <div class="dropdown-body-inner">
+                                                <div class="dropdown-item" value="example1">Example 1</div>
+                                                <div class="dropdown-item" value="example2">Example 2</div>
+                                                <div class="dropdown-item" value="example3">Example 3</div>
+                                                <div class="dropdown-item" value="example4">Example 4</div>
+                                                <div class="dropdown-item" value="example5">Example 5</div>
+                                                <div class="dropdown-item" value="example6">Example 6</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <p>
+                                        Оберіть найближче відділення зі списку тих, що працюють. <br>
+                                        Ми регулярно оновлюємо цей перелік.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="delivery-option__prise  free-price">
+                                <span>Безкоштовно</span>
+                            </div>
+
+                        </label>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+            <!-- delivery -->
+
+            <!-- pay  -->
+            <div class="form__content-pay">
+                <h3>3. Оплата</h3>
+
+                <div class="form__content-pay__wrapper">
+                    <h4>Спосіб оплати</h4>
+
+                    <div class="form__content-pay__wrapper-content">
+                        <div class="form__content-pay__wrapper-content__item">
+                            <input type="radio" name="payment-option" class="visible-radio">
+
+                            <div class="pay-bank">
+                                <div class="pay-bank__icon">
+                                    <img src="./img/payBank-icon.svg" alt="Back Card">
+                                </div>
+
+                                <div class="pay-bank__content">
+                                    <h4>Прямий банківський переказ</h4>
+                                    <p>
+                                        Оплату потрібно направляти безпосередньо на наш банківський рахунок.
+                                        Використовуйте ідентифікатор замовлення в якості
+                                        коду платежу. Замовлення буде відправлений після надходження коштів на наш
+                                        рахунок.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form__content-pay__wrapper-content__item">
+                            <input type="radio" name="payment-option" class="visible-radio">
+
+                            <div class="pay-bank">
+                                <div class="pay-bank__icon">
+                                    <img src="./img/payCredit-icon.svg" alt="Credit Card">
+                                </div>
+
+                                <div class="pay-bank__content">
+                                    <h4>Оплата при доставці</h4>
+                                    <p>
+                                        Оплата готівкою при доставці замовлення.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form__content-pay__wrapper-content__item">
+                            <input type="radio" name="payment-option" class="visible-radio">
+
+                            <div class="pay-bank">
+                                <div class="pay-bank__icon">
+                                    <img src="./img/payLiq-icon.svg" alt="Credit Card">
+                                </div>
+
+                                <div class="pay-bank__content">
+                                    <h4>LiqPay</h4>
+                                    <p>
+                                        Платіжний сервіс, який дозволяє здійснювати моментальні платежі в інтернеті та
+                                        платіжних карток Visa, MasterCard у
+                                        всьому світі.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- pay -->
+
+            <!-- area -->
+            <div class="form__content-area">
+                <h3>4. Коментарі до замовлення</h3>
+
+                <div class="form__content-area__container">
+                    <textarea id="autoExpandTextarea" name="comment" rows="4" cols="50"
+                        placeholder="Напишіть деталі для вашого замовлення">
+
+                </textarea>
+
+                </div>
+            </div>
+            <!-- area -->
+        </div>
+
+    </form>
+
+
+</section>

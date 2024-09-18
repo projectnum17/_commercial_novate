@@ -1,0 +1,461 @@
+//_____________________ Footer Style Start ________________________
+
+.uniq-link {
+  margin-bottom: 20px;
+
+  @media screen and (max-width: 1660px) {
+    margin-bottom: 15px;
+  }
+
+  @media screen and (max-width: 976px) {
+    margin-bottom: 24px;
+  }
+
+  a {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    color: #6b6b6b;
+  }
+}
+
+footer {
+  background: #fff;
+  padding-top: 11px;
+
+  @media screen and (max-width: 1660px) {
+    padding-top: 0;
+  }
+
+  @media screen and (max-width: 976px) {
+    padding-top: 40px;
+  }
+}
+
+.footer__wrap {
+  max-width: 1660px;
+  margin-bottom: 130px;
+
+  @media screen and (max-width: 1660px) {
+    margin-bottom: 60px;
+  }
+
+  @media screen and (max-width: 1280px) {
+    margin-bottom: 40px;
+  }
+
+  /*  @media screen and (max-width: 976px) {
+    margin-bottom: 80px;
+  } */
+}
+
+.footer__invite-logo__thumb {
+  max-width: 351px;
+  padding-top: 40px;
+
+  @media screen and (max-width: 1660px) {
+    padding-top: 37px;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+}
+
+.footer__invite {
+  display: flex;
+  align-items: self-end;
+  justify-content: space-between;
+  padding-bottom: 60px;
+
+  @media screen and (max-width: 1280px) {
+    padding-bottom: 30px;
+  }
+
+  @media screen and (max-width: 976px) {
+    flex-direction: column;
+    gap: 40px;
+    padding-bottom: 40px;
+    align-items: center;
+  }
+
+  &-logo {
+    a {
+      display: block;
+      transition: 0.2s linear;
+
+      &:hover,
+      &:active,
+      &:focus {
+        opacity: 0.8;
+      }
+    }
+  }
+
+  &-item {
+    a {
+      background: #feb92f;
+      display: block;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 21px;
+      text-align: center;
+      padding: 20px 90px;
+      transition: 0.2s linear;
+      color: $color-blue;
+
+      @media screen and (max-width: 1660px) {
+        font-size: 13px;
+        line-height: 16px;
+        padding: 15px 67px;
+      }
+
+      &:hover,
+      &:active,
+      &:focus {
+        opacity: 0.8;
+      }
+    }
+  }
+}
+
+.footer__nav {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  @media screen and (max-width: 1280px) {
+    position: relative;
+    justify-content: initial;
+    gap: 100px;
+    //margin-left: 100px;
+  }
+
+  @media screen and (max-width: 976px) {
+    gap: 0;
+    margin-left: 0;
+  }
+
+  &-prod {
+    width: 45%;
+
+    @media screen and (max-width: 1660px) {
+      width: 39%;
+    }
+
+    @media screen and (max-width: 1280px) {
+      max-width: 170px;
+    }
+
+    @media screen and (max-width: 1315px) {
+      width: auto;
+    }
+
+    @media screen and (max-width: 976px) {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    &_lists {
+      display: flex;
+      justify-content: space-between;
+
+      @media screen and (max-width: 1315px) {
+        flex-direction: column;
+      }
+
+      @media screen and (max-width: 1280px) {
+        display: none;
+      }
+
+      &-link {
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 32px;
+        letter-spacing: 0em;
+        display: block;
+        color: $dark-grey;
+        transition: 0.2s linear;
+
+        @media screen and (max-width: 1660px) {
+          font-size: 12px;
+          line-height: 24px;
+        }
+
+        &:hover,
+        &:active,
+        &:focus {
+          text-decoration: underline;
+          color: $color-blue;
+        }
+      }
+    }
+  }
+}
+
+.footer__subtitle {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0em;
+  margin-bottom: 20px;
+  color: $dark-grey;
+}
+
+.footer__nav-material {
+  &_item {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 30px;
+
+    @media screen and (max-width: 1660px) {
+      gap: 22px;
+    }
+
+    @media screen and (max-width: 1280px) {
+      position: absolute;
+      left: 0%;
+      top: 6%;
+      gap: 20px;
+    }
+
+    @media screen and (max-width: 976px) {
+      position: inherit;
+      padding-top: 0;
+      gap: 24px;
+      margin-bottom: 24px;
+    }
+
+    a {
+      display: block;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 30px;
+      letter-spacing: 0em;
+      color: $dark-grey;
+      transition: 0.2s linear;
+
+      &:hover,
+      &:active,
+      &:focus {
+        color: $color-blue;
+      }
+    }
+  }
+}
+
+.footer__nav-news {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  @media screen and (max-width: 1660px) {
+    gap: 22px;
+  }
+
+  @media screen and (max-width: 1280px) {
+    gap: 20px 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media screen and (max-width: 976px) {
+    gap: 24px;
+    margin-bottom: 0px;
+    display: flex;
+    gap: 20px;
+  }
+
+  li {
+    a {
+      display: block;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 30px;
+      letter-spacing: 0em;
+      color: $dark-grey;
+      transition: 0.2s linear;
+
+      @media screen and (max-width: 1280px) {
+        width: max-content;
+      }
+
+      @media screen and (max-width: 976px) {
+        width: auto;
+      }
+
+      &:hover,
+      &:active,
+      &:focus {
+        color: $color-blue;
+      }
+    }
+  }
+}
+
+.footer__nav-social {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+
+  @media screen and (max-width: 1280px) {
+    flex: 1;
+    justify-content: end;
+    padding-right: 25px;
+  }
+
+  @media screen and (max-width: 1020px) {
+    padding-right: 0;
+  }
+
+  li {
+    a {
+      display: block;
+      width: 24px;
+      height: 24px;
+      transition: 0.2s linear;
+      @media screen and (max-width: 1660px) {
+        width: 18px;
+        height: 18px;
+      }
+
+      &:hover,
+      &:active,
+      &:focus {
+        opacity: 0.8;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+
+.footer__police {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 50px;
+  border-top: 1px solid #f3f3f3;
+  padding-top: 30px;
+
+  @media screen and (max-width: 1660px) {
+    padding-top: 37px;
+    padding-bottom: 37px;
+  }
+
+  @media screen and (max-width: 1150px) {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  @media screen and (max-width: 768px) {
+    gap: 24px;
+    max-width: 353px;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 40px;
+  }
+
+  p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    color: #a0a0a0;
+  }
+  &-item {
+    display: flex;
+    gap: 50px;
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    a {
+      position: relative;
+      display: block;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      color: $color-blue;
+      transition: 0.2s linear;
+      @media screen and (max-width: 1660px) {
+        font-size: 12px;
+        line-height: 18px;
+      }
+
+      &:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background: $color-blue;
+
+        &:hover,
+        &:active,
+        &:focus {
+          opacity: 0.8;
+        }
+      }
+
+      &:hover,
+      &:active,
+      &:focus {
+        opacity: 0.8;
+      }
+    }
+  }
+}
+
+.footer__nav-material {
+  li:not(:first-child) {
+    @media screen and (max-width: 976px) {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 976px) {
+  .footer__nav {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.footer__nav-social {
+  @media screen and (max-width: 976px) {
+    margin-bottom: 40px;
+    order: 1;
+    padding: 0;
+  }
+}
+
+.footer__nav-prod {
+  @media screen and (max-width: 976px) {
+    order: 2;
+  }
+}
+
+.footer__nav-material {
+  @media screen and (max-width: 976px) {
+    order: 3;
+  }
+}
+
+.footer__nav-news {
+  @media screen and (max-width: 976px) {
+    order: 4;
+  }
+}
+//_____________________ Footer Style End ________________________

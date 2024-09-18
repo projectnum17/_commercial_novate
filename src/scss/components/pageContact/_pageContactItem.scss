@@ -1,0 +1,349 @@
+.contact {
+  &__bread {
+    padding-top: 20px;
+    margin-bottom: 20px;
+
+    @media screen and (max-width: 768px) {
+      padding-top: 16px;
+      margin-bottom: 16px;
+    }
+
+    p {
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 21px;
+      letter-spacing: 0em;
+      color: #c8c8c8;
+    }
+  }
+}
+
+.contact__intro {
+  position: relative;
+  margin-bottom: 100px;
+
+  @media screen and (max-width: 1660px) {
+    margin-bottom: 80px;
+  }
+
+  @media screen and (max-width: 1440px) {
+    margin-bottom: 60px;
+  }
+
+  @media screen and (max-width: 768px) {
+    margin-bottom: 24px;
+  }
+
+  &-overlay {
+    position: absolute;
+    background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.7) 0.61%,
+      rgba(0, 0, 0, 0) 100%
+    );
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+  }
+
+  &-img {
+    max-width: 1720px;
+
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: cover;
+
+      @media screen and (max-width: 768px) {
+        height: 250px;
+      }
+    }
+  }
+
+  &-title {
+    position: absolute;
+    top: 50%;
+    left: 145px;
+
+    transform: translateY(-50%);
+
+    @media screen and (max-width: 1292px) {
+      left: 80px;
+    }
+
+    @media screen and (max-width: 768px) {
+      left: 16px;
+    }
+
+    h1 {
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 48px;
+      font-weight: 400;
+      line-height: 72px;
+      letter-spacing: 0em;
+
+      @media screen and (max-width: 768px) {
+        font-size: 24px;
+        line-height: 36px;
+      }
+    }
+  }
+}
+
+.contact__content {
+  border-left: 1px solid #e6e6e6;
+  max-width: 1598px;
+  margin-left: auto;
+
+  @media screen and (max-width: 768px) {
+    border-left: none;
+    max-width: 100%;
+  }
+}
+
+.content__content-map {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+
+  @media screen and (max-width: 1292px) {
+    flex-direction: column;
+    gap: 26px;
+  }
+
+  @media screen and (max-width: 768px) {
+    margin-bottom: 24px;
+  }
+}
+
+.contact__map-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-left: 21px;
+
+  @media screen and (max-width: 768px) {
+    gap: 0;
+    padding-left: 0;
+    width: 100%;
+  }
+
+  &__title {
+    h2 {
+      position: relative;
+      font-size: 48px;
+      font-weight: 400;
+      line-height: 57px;
+      letter-spacing: 0em;
+      color: #000;
+
+      @media screen and (max-width: 1660px) {
+        font-size: 36px;
+        line-height: 42px;
+      }
+
+      @media screen and (max-width: 768px) {
+        font-size: 24px;
+        line-height: 29px;
+        margin-bottom: 16px;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        height: 57px;
+        width: 3px;
+        background: #89acf2;
+        top: 0;
+        left: -25px;
+
+        @media screen and (max-width: 768px) {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &__subtitle {
+    @media screen and (max-width: 768px) {
+      margin-bottom: 24px;
+    }
+
+    p {
+      max-width: 631px;
+      font-size: 20px;
+      font-weight: 300;
+      line-height: 40px;
+      letter-spacing: 0em;
+      color: #6b6b6b;
+
+      @media screen and (max-width: 768px) {
+        font-size: 16px;
+        line-height: 32px;
+      }
+    }
+  }
+
+  &__phone {
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (max-width: 768px) {
+      margin-bottom: 24px;
+    }
+
+    h4 {
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 40px;
+      letter-spacing: 0em;
+      color: #6b6b6b;
+
+      @media screen and (max-width: 768px) {
+        font-size: 16px;
+        line-height: 32px;
+      }
+    }
+
+    a {
+      width: max-content;
+      position: relative;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 40px;
+      letter-spacing: 0em;
+      color: #89acf2;
+
+      @media screen and (max-width: 768px) {
+        font-size: 16px;
+        line-height: 32px;
+      }
+
+      &:after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        bottom: 0;
+        left: 0;
+        background: #89acf2;
+      }
+    }
+  }
+
+  &__email {
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (max-width: 768px) {
+      margin-bottom: 24px;
+    }
+
+    h4 {
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 40px;
+      letter-spacing: 0em;
+      color: #6b6b6b;
+
+      @media screen and (max-width: 768px) {
+        font-size: 16px;
+        line-height: 32px;
+      }
+    }
+
+    a {
+      width: max-content;
+      position: relative;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 40px;
+      letter-spacing: 0em;
+      color: #89acf2;
+
+      @media screen and (max-width: 768px) {
+        font-size: 16px;
+        line-height: 32px;
+      }
+
+      &:after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        bottom: 0;
+        left: 0;
+        background: #89acf2;
+      }
+    }
+  }
+
+  &__link {
+    padding-top: 31px;
+
+    @media screen and (max-width: 768px) {
+      margin-bottom: 24px;
+      padding-top: 24px;
+      width: 100%;
+    }
+
+    a {
+      background: #feb92f;
+      color: #014e86;
+      padding: 20px 94px;
+
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 30px;
+      letter-spacing: 0em;
+      text-align: center;
+
+      @media screen and (max-width: 768px) {
+        display: block;
+        padding: 20px 0;
+      }
+    }
+  }
+}
+
+.contact__map-img {
+  padding-left: 21px;
+
+  @media screen and (max-width: 1292px) {
+    width: 100%;
+  }
+
+  @media screen and (max-width: 768px) {
+    padding-left: 0;
+  }
+
+  a {
+    transition: 0.2s linear;
+
+    &:hover,
+    &:active,
+    &:focus {
+      opacity: 0.8;
+    }
+  }
+}
+
+.contact__map-thumb {
+  max-width: 850px;
+
+  @media screen and (max-width: 1292px) {
+    max-width: 100%;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+  }
+}

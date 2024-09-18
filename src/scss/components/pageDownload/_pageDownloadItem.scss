@@ -1,0 +1,227 @@
+.download {
+  margin-bottom: 100px;
+
+  @media screen and (max-width: 768px) {
+    margin-bottom: 80px;
+  }
+
+  &__bread {
+    padding-top: 20px;
+    margin-bottom: 80px;
+
+    @media screen and (max-width: 1660px) {
+      padding-top: 10px;
+      margin-bottom: 40px;
+    }
+
+    @media screen and (max-width: 768px) {
+      padding-top: 16px;
+      margin-bottom: 16px;
+    }
+
+    p {
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 21px;
+      letter-spacing: 0em;
+      color: #a0a0a0;
+    }
+  }
+}
+
+.download__content-posm {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  //flex-wrap: wrap;
+  margin-bottom: 50px;
+
+  @media screen and (max-width: 1625px) {
+    flex-direction: column;
+    gap: 24px;
+  }
+}
+
+.download__content-posm__text {
+  h1 {
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 57px;
+    letter-spacing: 0em;
+    color: #000;
+    margin-bottom: 30px;
+
+    @media screen and (max-width: 1660px) {
+      font-size: 32px;
+      line-height: 38px;
+      margin-bottom: 20px;
+    }
+
+    @media screen and (max-width: 768px) {
+      margin-bottom: 16px;
+      font-size: 28px;
+      line-height: 42px;
+    }
+  }
+
+  p {
+    max-width: 850px;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 36px;
+    letter-spacing: 0em;
+    color: #6b6b6b;
+
+    @media screen and (max-width: 1660px) {
+      font-size: 16px;
+      line-height: 32px;
+    }
+
+    @media screen and (max-width: 1625px) {
+      max-width: 100%;
+    }
+
+    @media screen and (max-width: 768px) {
+      font-size: 16px;
+      line-height: 29px;
+    }
+  }
+}
+
+.download__content-posm__logo {
+  background: #fff;
+  padding: 41px 110px;
+  @media screen and (max-width: 1660px) {
+    padding: 41px 49px;
+  }
+
+  @media screen and (max-width: 1625px) {
+    flex: 1;
+    width: 100%;
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 26px 56px;
+  }
+
+  &-thumb {
+    max-width: 485px;
+
+    @media screen and (max-width: 1625px) {
+      margin: auto;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      display: block;
+    }
+  }
+}
+
+.download__content-item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  //flex-wrap: wrap;
+
+  @media screen and (max-width: 1605px) {
+    gap: 24px;
+  }
+
+  @media screen and (max-width: 956px) {
+    flex-direction: column;
+    gap: 24px;
+  }
+}
+
+.download__content-item__img {
+  background: #fff;
+  padding: 65px 81px 50px 81px;
+
+  @media screen and (max-width: 1660px) {
+    padding: 65px 20px 50px 20px;
+  }
+
+  @media screen and (max-width: 956px) {
+    width: 100%;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    padding: 29px 41px 29px 41px;
+  }
+
+  &-thumb {
+    max-width: 543px;
+
+    @media screen and (max-width: 956px) {
+      margin: 0 auto;
+    }
+
+    @media screen and (max-width: 768px) {
+      margin: auto;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      display: block;
+    }
+  }
+}
+.download__content-item__down {
+  padding: 50px 50px 58px 50px;
+  background: #fff;
+  max-width: 850px;
+  width: 100%;
+
+  @media screen and (max-width: 956px) {
+    max-width: 100%;
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 40px 16px 40px 16px;
+  }
+}
+
+.download__content-item__down-items {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  a {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e6e6e6;
+    padding-bottom: 1px;
+  }
+}
+
+.download-text__item {
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 42px;
+  letter-spacing: 0em;
+  color: #000;
+
+  @media screen and (max-width: 768px) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.download-icon__item {
+  width: 15px;
+  height: 15px;
+
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+  }
+}
